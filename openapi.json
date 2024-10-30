@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "minimal-api",
+      "version": "1.0"
+    },
+    "paths": {
+      "/": {
+        "get": {
+          "tags": [
+            "minimal-api"
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/login": {
+        "post": {
+          "tags": [
+            "minimal-api"
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginDTO"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "LoginDTO": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "nullable": true
+            },
+            "senha": {
+              "type": "string",
+              "nullable": true
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
