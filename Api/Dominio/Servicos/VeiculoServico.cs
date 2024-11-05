@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using minimal_api.DTOs;
-using minimal_api.Entities;
+using minimal_api.Dominio.DTOs;
+using minimal_api.Dominio.Entities;
+using minimal_api.Dominio.Interfaces;
 using minimal_api.Infraestrutura.Db;
 
-namespace minimal_api.Dominio.Interfaces;
+namespace minimal_api.Dominio.Servicos;
 
 public class VeiculoServico : IVeiculoServico
 {

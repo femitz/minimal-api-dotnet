@@ -1,8 +1,9 @@
-using minimal_api.DTOs;
-using minimal_api.Entities;
+using minimal_api.Dominio.DTOs;
+using minimal_api.Dominio.Entities;
 using minimal_api.Infraestrutura.Db;
+using minimal_api.Dominio.Interfaces;
 
-namespace minimal_api.Dominio.Interfaces;
+namespace minimal_api.Dominio.Servicos;
 
 public class AdministradorServico : IAdministradorServicos
 {
@@ -35,7 +36,7 @@ public class AdministradorServico : IAdministradorServicos
 
         return query.ToList();
     }
-    
+
 #nullable enable
     public Administrador? BuscaPorId(int id)
     {

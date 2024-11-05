@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace minimal_api.Entities;
+namespace minimal_api.Dominio.Entities;
 
 public class Administrador
 {
